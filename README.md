@@ -1,10 +1,11 @@
 ### Protein Secondary Structure Prediction Project 
-# Protein secondary structure prediction is a fundamental challenge in computational biology because secondary structures form the bridge between a protein’s linear amino acid sequence and its functional three-dimensional structure. 
-# The three main structural elements—α-helices (H), β-strands (E), and random coils (C)—are stabilized by non-covalent interactions between residues. While α-helices are primarily governed by local hydrogen bonding, β-sheets often arise from interactions between residues that may be far apart in the primary sequence. 
-# Protein sequences also evolve over time, and residues important for structural stability or function tend to remain conserved or co-evolve with interacting partners. 
-# To capture this evolutionary signal, position-specific scoring matrices (PSSMs) derived from multiple sequence alignments are commonly used as input features for structure prediction models. 
-# Deep learning approaches such as Recurrent Neural Networks (RNNs) are well suited for modelling biological sequences because they maintain a hidden state that propagates information across the sequence, enabling the capture of dependencies between distant residues. 
-# However, traditional RNNs often suffer from the vanishing gradient problem. This limitation can be addressed using gated architectures such as Gated Recurrent Units (GRUs), which regulate information flow and enable learning long-range relationships. 
+-> Protein secondary structure prediction is a fundamental challenge in computational biology because secondary structures form the bridge between a protein’s linear amino acid sequence and its functional three-dimensional structure. 
+-> The three main structural elements—α-helices (H), β-strands (E), and random coils (C)—are stabilized by non-covalent interactions between residues. While α-helices are primarily governed by local hydrogen bonding, β-sheets often arise from interactions between residues that may be far apart in the primary sequence. 
+-> Protein sequences also evolve over time, and residues important for structural stability or function tend to remain conserved or co-evolve with interacting partners. 
+-> To capture this evolutionary signal, position-specific scoring matrices (PSSMs) derived from multiple sequence alignments are commonly used as input features for structure prediction models. 
+-> Deep learning approaches such as Recurrent Neural Networks (RNNs) are well suited for modelling biological sequences because they maintain a hidden state that propagates information across the sequence, enabling the capture of dependencies between distant residues. 
+-> However, traditional RNNs often suffer from the vanishing gradient problem. This limitation can be addressed using gated architectures such as Gated Recurrent Units (GRUs), which regulate information flow and enable learning long-range relationships. 
+
 # In this project, a Bidirectional GRU (Bi-GRU) network is implemented, trained on PSSM features, and by processing sequences in both forward and backward directions, it is able to capture local motifs and long-range interactions for accurate Q3 secondary structure prediction.
 
 # Materials/methods
